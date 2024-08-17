@@ -1,0 +1,49 @@
+﻿.button {
+    background: linear-gradient(135deg, rgb(51, 74, 246), rgb(86, 181, 184));
+    padding: 18px 3px;
+    border-radius: 0 1.15rem;
+    cursor: pointer;
+}
+
+.button__span {
+    padding: 15px 27px;
+    border-radius: 0 1rem;
+    transition: all 0.3s;
+}
+
+
+.button__text {
+    transition: all 0.3s;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(135deg, rgb(51, 74, 246), rgb(86, 181, 184));
+    -webkit-background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+@media (hover:hover) {
+    .button:hover .button__span {
+        background: none;
+    }
+
+    .button:hover .button__text {
+        background-image: linear-gradient(white, white);
+    }
+}
+
+@media (hover:none) {
+    .button:active .button__span {
+        background: none;
+    }
+
+    .button:active .button__text {
+        background-image: linear-gradient(white, white);
+    }
+}

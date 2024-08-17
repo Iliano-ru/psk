@@ -1,0 +1,371 @@
+﻿@import url(./components/header/header.css);
+@import url(./components/square.css);
+@import url(./components/button.css);
+@import url(./components/gradient-line.css);
+@import url(./components/card/card.css  );
+
+:root {
+    --font-size-text: 20px;
+    font-size: var(--font-size-text);
+    --font-size-cutaway-title: 1.8rem;
+    --font-size-title: 2.7rem;
+    --font-size-card: 0.85rem;
+    --font-size-text-big: 1.25rem;
+    --color-text-purple: rgb(151, 151, 218);
+    --color-text-purple-dark: rgb(89, 89, 139);
+    --color-text-grey: rgba(116, 116, 116, 0.808);
+    --color-text-white: whitesmoke;
+    --color-background: #e9eaee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+a,
+p,
+button {
+    font-size: var(--font-size-text);
+}
+
+h1,
+h2 {
+    font-size: var(--font-size-title);
+    letter-spacing: 1.1px;
+}
+
+/* inner */
+.cutaway-section-3__inner,
+.header_position,
+.cutaway-section-2__inner,
+.cutaway-section-4__inner,
+.cutaway-section-1__inner {
+    margin: 0 140px;
+    width: calc(100% - 280px);
+}
+
+
+
+/* header */
+
+.header_position {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__menu-link {
+    color: var(--color-text-white);
+    font-weight: 500;
+}
+
+/* cutaway-section-1 */
+
+
+
+.cutaway {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(255, 255, 255, 0.1)), url(../images/897f6845724e4711b48b8d91a599db1d.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.cutaway-section-1__header {
+    font-size: var(--font-size-cutaway-title);
+}
+
+.cutaway-section-1__indentation {
+    height: 300px;
+    width: 100%;
+}
+
+.cutaway-section-1__h1-wrapper {
+    margin: 0 0 50px;
+}
+
+.cutaway-section-1__square-wrapper {
+    max-width: 900px;
+}
+
+
+/* cutaway-section-2 */
+
+
+.cutaway-section-2 {
+    background: linear-gradient(20deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0.7735294801514356) 70%, rgba(255, 255, 255, 0) 90%);
+}
+
+.cutaway-section-2__indentation {
+    width: 100%;
+    height: 200px;
+}
+
+.cutaway-section-2__p-wrapper {
+    max-width: 800px;
+    margin-bottom: 100px;
+}
+
+.cutaway-section-2__button-wrapper {
+    margin: 0 40px 100px;
+}
+
+
+.cutaway-section-2__gradient-line-wrapper {
+    margin-top: -140px;
+}
+
+.button__span_white {
+    background-color: white;
+}
+
+/* cutaway-section-3 */
+
+
+.cutaway-section-3 {
+    background: white;
+}
+
+
+.cutaway-section-3__inner {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'small-header small-header small-header small-header'
+        'h2 h2 h2 h2'
+        'text text text button'
+        'card1 card2 card3 card4';
+}
+
+.cutaway-section-3__small-header-wrapper {
+    grid-area: small-header;
+}
+
+.cutaway-section-3__header-wrapper {
+    grid-area: h2;
+}
+
+.cutaway-section-3__text-wrapper {
+    max-width: 650px;
+    grid-area: text;
+}
+
+.cutaway-section-3__button-wrapper {
+    grid-area: button;
+    justify-self: right;
+    align-self: center;
+    margin: 15px 30px 30px;
+}
+
+.cutaway-section-3__card-wrapper {
+    justify-self: center;
+}
+
+.cutaway-section-3__card-wrapper_1 {
+    grid-area: card1;
+}
+
+.cutaway-section-3__card-wrapper_2 {
+    grid-area: card2;
+}
+
+.cutaway-section-3__card-wrapper_3 {
+    grid-area: card3;
+}
+
+.cutaway-section-3__card-wrapper_4 {
+    grid-area: card4;
+}
+
+
+/* cutaway-section-4 */
+
+.cutaway-section-4 {
+    background: linear-gradient(195deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.7735294801514356) 70%, rgba(255, 255, 255, 0) 90%);
+}
+
+.cutaway-section-4__indentation {
+    height: 300px;
+    width: 100%;
+}
+
+.cutaway-section-4__inner {
+    display: flex;
+    justify-content: right;
+}
+
+.cutaway-section-4__square-wrapper {
+    max-width: 800px;
+    margin-top: 200px;
+}
+
+.cutaway-section-4__p {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+/* media */
+
+@media (max-width:1710px) {
+    .card {
+        width: 250px;
+    }
+}
+
+@media (max-width:1440px) {
+
+    .cutaway-section-4__inner,
+    .cutaway-section-3__inner,
+    .header_position,
+    .cutaway-section-2__inner,
+    .cutaway-section-1__inner {
+        margin: 0 70px;
+        width: calc(100% - 140px);
+    }
+}
+
+@media (max-width:1280px) {
+    :root {
+        --font-size-text: 18px;
+    }
+
+    .cutaway-section-4__inner,
+    .cutaway-section-3__inner,
+    .header_position,
+    .cutaway-section-2__inner,
+    .cutaway-section-1__inner {
+        margin: 0 30px;
+        width: calc(100% - 60px);
+    }
+
+    .cutaway-section-3__inner {
+        grid-template-areas:
+            'small-header small-header small-header small-header'
+            'h2 h2 h2 h2'
+            'text text text button'
+            'card1 card2 card3 card4';
+    }
+
+    .card {
+        width: 200px;
+    }
+}
+
+@media (max-width:960px) {
+    :root {
+        --font-size-text: 17px;
+        --font-size-card: 1.1rem;
+    }
+
+    /* cutaway-section-1 */
+
+    .cutaway-section-1__indentation {
+        height: 150px;
+    }
+
+    /* cutaway-section-2 */
+
+    .cutaway-section-2__indentation {
+        width: 100%;
+        height: 100px;
+    }
+
+    .cutaway-section-2__p-wrapper {
+        max-width: 800px;
+    }
+
+    .cutaway-section-2__button-wrapper {
+        margin-top: 0;
+    }
+
+    .cutaway-section-3__inner {
+        grid-template-areas:
+            'small-header small-header small-header small-header'
+            'h2 h2 h2 h2'
+            'text text text button'
+            'card1 card1 card2 card2'
+            'card3 card3 card4 card4';
+    }
+
+    .card {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .cutaway-section-4__indentation {
+        height: 150px;
+        width: 100%;
+    }
+
+    .cutaway-section-3__inner {
+        grid-template-areas:
+            'small-header small-header small-header small-header'
+            'h2 h2 h2 h2'
+            'text text text text'
+            'button button button button'
+            'button button button button'
+            'card1 card1 card1 card1'
+            'card2 card2 card2 card2'
+            'card3 card3 card3 card3'
+            'card4 card4 card4 card4';
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .cutaway-section-3__button-wrapper {
+        justify-self: left;
+        margin: 30px 0;
+    }
+}
+
+/* modifiers */
+
+
+.text_white {
+    color: whitesmoke;
+}
+
+.text_grey {
+    color: var(--color-text-grey);
+}
+
+.text_black {
+    color: black;
+}
+
+.text_purple {
+    color: var(--color-text-purple);
+}
+
+.text_500 {
+    font-weight: 500;
+}
+
+.font_card {
+    font-size: var(--font-size-card);
+}
+
+.font_text {
+    font-size: var(--font-size-text);
+}
+
+.font_cutaway-title {
+    font-size: var(--font-size-cutaway-title);
+}
+
+.font_title {
+    font-size: var(--font-size-title);
+}
+
+.font_card {
+    font-size: var(--font-size-card);
+}
+
+.font_big {
+    font-size: var(--font-size-text-big)
+}

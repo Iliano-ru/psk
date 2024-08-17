@@ -1,0 +1,33 @@
+﻿@import url(./menu-burger/menu-burger.css);
+
+.header {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    gap: 55px;
+}
+
+
+@media (max-width: 960px) {
+
+    .header {
+        justify-content: left;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 0;
+        top: 24px;
+        z-index: 100;
+    }
+}
