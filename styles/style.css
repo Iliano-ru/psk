@@ -2,12 +2,13 @@
 @import url(./components/square.css);
 @import url(./components/button.css);
 @import url(./components/gradient-line.css);
-@import url(./components/card/card.css  );
+@import url(./components/card/card.css);
+@import url(./components/square_dark.css);
 
 :root {
     --font-size-text: 20px;
     font-size: var(--font-size-text);
-    --font-size-cutaway-title: 1.8rem;
+    --font-size-white-part-title: 1.8rem;
     --font-size-title: 2.7rem;
     --font-size-card: 0.85rem;
     --font-size-text-big: 1.25rem;
@@ -15,8 +16,12 @@
     --color-text-purple-dark: rgb(89, 89, 139);
     --color-text-grey: rgba(116, 116, 116, 0.808);
     --color-text-white: whitesmoke;
-    --color-background: #e9eaee;
+    --color-background: rgba(255, 255, 255, 1);
+    --color-background07: rgba(255, 255, 255, 0.7);
+    --color-background-black: #1f2122;
+    --color-background07-black: #1f2122c0;
 }
+
 
 * {
     box-sizing: border-box;
@@ -37,11 +42,12 @@ h2 {
 }
 
 /* inner */
-.cutaway-section-3__inner,
+.black-part-section1__inner,
+.white-part-section-3__inner,
 .header_position,
-.cutaway-section-2__inner,
-.cutaway-section-4__inner,
-.cutaway-section-1__inner {
+.white-part-section-2__inner,
+.white-part-section-4__inner,
+.white-part-section-1__inner {
     margin: 0 140px;
     width: calc(100% - 280px);
 }
@@ -61,57 +67,57 @@ h2 {
     font-weight: 500;
 }
 
-/* cutaway-section-1 */
+/* white-part-section-1 */
 
 
 
-.cutaway {
+.white-part {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(255, 255, 255, 0.1)), url(../images/897f6845724e4711b48b8d91a599db1d.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.cutaway-section-1__header {
-    font-size: var(--font-size-cutaway-title);
+.white-part-section-1__header {
+    font-size: var(--font-size-white-part-title);
 }
 
-.cutaway-section-1__indentation {
+.white-part-section-1__indentation {
     height: 300px;
     width: 100%;
 }
 
-.cutaway-section-1__h1-wrapper {
+.white-part-section-1__h1-wrapper {
     margin: 0 0 50px;
 }
 
-.cutaway-section-1__square-wrapper {
+.white-part-section-1__square-wrapper {
     max-width: 900px;
 }
 
 
-/* cutaway-section-2 */
+/* white-part-section-2 */
 
 
-.cutaway-section-2 {
-    background: linear-gradient(20deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0.7735294801514356) 70%, rgba(255, 255, 255, 0) 90%);
+.white-part-section-2 {
+    background: linear-gradient(20deg, var(--color-background) 0%, var(--color-background) 60%, var(--color-background-07) 70%, rgba(255, 255, 255, 0) 90%);
 }
 
-.cutaway-section-2__indentation {
+.white-part-section-2__indentation {
     width: 100%;
     height: 200px;
 }
 
-.cutaway-section-2__p-wrapper {
+.white-part-section-2__p-wrapper {
     max-width: 800px;
     margin-bottom: 100px;
 }
 
-.cutaway-section-2__button-wrapper {
+.white-part-section-2__button-wrapper {
     margin: 0 40px 100px;
 }
 
 
-.cutaway-section-2__gradient-line-wrapper {
+.white-part-section-2__gradient-line-wrapper {
     margin-top: -140px;
 }
 
@@ -119,15 +125,15 @@ h2 {
     background-color: white;
 }
 
-/* cutaway-section-3 */
+/* white-part-section-3 */
 
 
-.cutaway-section-3 {
+.white-part-section-3 {
     background: white;
 }
 
 
-.cutaway-section-3__inner {
+.white-part-section-3__inner {
     display: grid;
     gap: 10px;
     grid-template-areas:
@@ -137,71 +143,154 @@ h2 {
         'card1 card2 card3 card4';
 }
 
-.cutaway-section-3__small-header-wrapper {
+.white-part-section-3__small-header-wrapper {
     grid-area: small-header;
 }
 
-.cutaway-section-3__header-wrapper {
+.white-part-section-3__header-wrapper {
     grid-area: h2;
 }
 
-.cutaway-section-3__text-wrapper {
+.white-part-section-3__text-wrapper {
     max-width: 650px;
     grid-area: text;
 }
 
-.cutaway-section-3__button-wrapper {
+.white-part-section-3__button-wrapper {
     grid-area: button;
     justify-self: right;
     align-self: center;
     margin: 15px 30px 30px;
 }
 
-.cutaway-section-3__card-wrapper {
+.white-part-section-3__card-wrapper {
     justify-self: center;
 }
 
-.cutaway-section-3__card-wrapper_1 {
+.white-part-section-3__card-wrapper_1 {
     grid-area: card1;
 }
 
-.cutaway-section-3__card-wrapper_2 {
+.white-part-section-3__card-wrapper_2 {
     grid-area: card2;
 }
 
-.cutaway-section-3__card-wrapper_3 {
+.white-part-section-3__card-wrapper_3 {
     grid-area: card3;
 }
 
-.cutaway-section-3__card-wrapper_4 {
+.white-part-section-3__card-wrapper_4 {
     grid-area: card4;
 }
 
 
-/* cutaway-section-4 */
+/* white-part-section-4 */
 
-.cutaway-section-4 {
-    background: linear-gradient(195deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.7735294801514356) 70%, rgba(255, 255, 255, 0) 90%);
+.white-part-section-4 {
+    transition: background 1s;
+    background: linear-gradient(197deg, var(--color-background) 0%, var(--color-background) 40%, var(--color-background07) 70%, rgba(0, 0, 0, .1) 90%);
 }
 
-.cutaway-section-4__indentation {
+.white-part-section-4__indentation {
     height: 300px;
     width: 100%;
 }
 
-.cutaway-section-4__inner {
+.white-part-section-4__inner {
     display: flex;
     justify-content: right;
 }
 
-.cutaway-section-4__square-wrapper {
+.white-part-section-4__square-wrapper {
     max-width: 800px;
-    margin-top: 200px;
 }
 
-.cutaway-section-4__p {
+.white-part-section-4__p {
     max-width: 720px;
     margin-bottom: 40px;
+}
+
+
+/* black-part */
+
+
+/* black-part-section-1 */
+
+.black-part-section1 {
+    background: var(--color-background);
+}
+
+.black-part-section1__inner {
+    padding: 192px 0;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.black-part-section-1__square-wrapper {
+    max-width: 750px;
+    position: relative;
+    margin-top: -80px;
+    left: 40px;
+    z-index: 104;
+}
+
+.black-part-section-1__h2-wrapper {
+    margin: 0 0 25px;
+}
+
+.black-part-section-1__p-wrapper {
+    margin-bottom: 30px;
+}
+
+.black-part-section1__stroika-wrapper {
+    height: 455px;
+    overflow: hidden;
+    padding-right: 120px;
+}
+
+.black-part-section1__stroika {
+    width: 911.5px;
+}
+
+.black-part-section1__pipes-wrapper {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    position: absolute;
+    right: 450px;
+    margin-top: 420px;
+    z-index: 105;
+}
+
+.black-part-section1__pipes {
+    transform: translateX(-70px);
+}
+
+.black-part-section1__shaft-wrapper {
+    position: absolute;
+    z-index: 103;
+    margin-top: -40px;
+    margin-right: -80px;
+}
+
+.black-part-section1__shaft {
+    border-radius: 10px;
+
+}
+
+.black-part-section-1__dark-square-wrapper {
+    max-width: 250px;
+    position: absolute;
+    margin-top: 230px;
+    margin-right: -80px;
+}
+
+.black-part-section-1__dark-square__p {
+    margin-bottom: 20px;
 }
 
 /* media */
@@ -214,11 +303,12 @@ h2 {
 
 @media (max-width:1440px) {
 
-    .cutaway-section-4__inner,
-    .cutaway-section-3__inner,
+    .black-part-section1__inner,
+    .white-part-section-4__inner,
+    .white-part-section-3__inner,
     .header_position,
-    .cutaway-section-2__inner,
-    .cutaway-section-1__inner {
+    .white-part-section-2__inner,
+    .white-part-section-1__inner {
         margin: 0 70px;
         width: calc(100% - 140px);
     }
@@ -229,16 +319,17 @@ h2 {
         --font-size-text: 18px;
     }
 
-    .cutaway-section-4__inner,
-    .cutaway-section-3__inner,
+    .black-part-section1__inner,
+    .white-part-section-4__inner,
+    .white-part-section-3__inner,
     .header_position,
-    .cutaway-section-2__inner,
-    .cutaway-section-1__inner {
+    .white-part-section-2__inner,
+    .white-part-section-1__inner {
         margin: 0 30px;
         width: calc(100% - 60px);
     }
 
-    .cutaway-section-3__inner {
+    .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
@@ -257,28 +348,28 @@ h2 {
         --font-size-card: 1.1rem;
     }
 
-    /* cutaway-section-1 */
+    /* white-part-section-1 */
 
-    .cutaway-section-1__indentation {
+    .white-part-section-1__indentation {
         height: 150px;
     }
 
-    /* cutaway-section-2 */
+    /* white-part-section-2 */
 
-    .cutaway-section-2__indentation {
+    .white-part-section-2__indentation {
         width: 100%;
         height: 100px;
     }
 
-    .cutaway-section-2__p-wrapper {
+    .white-part-section-2__p-wrapper {
         max-width: 800px;
     }
 
-    .cutaway-section-2__button-wrapper {
+    .white-part-section-2__button-wrapper {
         margin-top: 0;
     }
 
-    .cutaway-section-3__inner {
+    .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
@@ -295,12 +386,12 @@ h2 {
 
 @media (max-width: 767px) {
 
-    .cutaway-section-4__indentation {
+    .white-part-section-4__indentation {
         height: 150px;
         width: 100%;
     }
 
-    .cutaway-section-3__inner {
+    .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
@@ -317,7 +408,7 @@ h2 {
         width: 300px;
     }
 
-    .cutaway-section-3__button-wrapper {
+    .white-part-section-3__button-wrapper {
         justify-self: left;
         margin: 30px 0;
     }
@@ -354,8 +445,8 @@ h2 {
     font-size: var(--font-size-text);
 }
 
-.font_cutaway-title {
-    font-size: var(--font-size-cutaway-title);
+.font_white-part-title {
+    font-size: var(--font-size-white-part-title);
 }
 
 .font_title {
