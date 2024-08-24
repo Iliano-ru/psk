@@ -1,14 +1,39 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
+    const shaft = document.querySelector('.black-part-section1__shaft-position');
+    const pipes = document.querySelector('.black-part-section1__pipes-position');
+    const darkSquare = document.querySelector('.black-part-section-1__dark-square-position');
+    const square = document.querySelector('.black-part-section-1__square-position ')
+    const whitePartSection4 = document.querySelector('.white-part-section-4')
+    const blackPartSection1 = document.querySelector('.black-part-section1')
+
+
     function colorBlackToWhite() {
-        // whitePartSection4.style['background'] = 'linear-gradient(197deg, var(--color-background) 0%, var(--color-background) 40%, var(--color-background07) 70%, rgba(0, 0, 0, .1) 90%)';
-        document.documentElement.style.setProperty('--color-background', 'rgba(255, 255, 255, 1)');
-        document.documentElement.style.setProperty('--color-background07', 'rgba(255, 255, 255, .7)');
+        whitePartSection4.classList.remove('white-part-section-4-color-change');
+        blackPartSection1.classList.remove('black-part-section1-color-change')
+        // document.documentElement.style.setProperty('--color-background', 'rgba(255, 255, 255, 1)');
+        // document.documentElement.style.setProperty('--color-background07', 'rgba(255, 255, 255, .7)');
     }
 
     function colorWhiteToBlack() {
-        // whitePartSection4.style['background'] = 'linear-gradient(197deg, var(--color-background-black) 0%, var(--color-background-black) 40%, var(--color-background07-black) 70%, rgba(0, 0, 0, .1) 90%)';
-        document.documentElement.style.setProperty('--color-background', '#1f2122');
-        document.documentElement.style.setProperty('--color-background07', '#1f2122c0');
+        whitePartSection4.classList.add('white-part-section-4-color-change');
+        blackPartSection1.classList.add('black-part-section1-color-change')
+        // document.documentElement.style.setProperty('--color-background', '#1f2122');
+        // document.documentElement.style.setProperty('--color-background07', '#1f2122c0');
+    }
+
+    function animationPlay() {
+        square.classList.add('black-part-section-1__square-position-final')
+        shaft.classList.add('black-part-section1__shaft-position-final')
+        pipes.classList.add('black-part-section1__pipes-position-final')
+        darkSquare.classList.add('black-part-section-1__dark-square-position-final')
+    }
+
+    function animationBack() {
+        square.classList.remove('black-part-section-1__square-position-final')
+        shaft.classList.remove('black-part-section1__shaft-position-final')
+        pipes.classList.remove('black-part-section1__pipes-position-final')
+        darkSquare.classList.remove('black-part-section-1__dark-square-position-final')
+
     }
 
     function scrollCheck(elementID, function1, function2) {
@@ -26,5 +51,6 @@
     // Вызываем функцию при прокрутке страницы
     window.addEventListener('scroll', () => {
         scrollCheck('color-change', colorWhiteToBlack, colorBlackToWhite);
+        scrollCheck('image-animation-start', animationPlay, animationBack)
     });
 });

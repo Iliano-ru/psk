@@ -42,12 +42,7 @@ h2 {
 }
 
 /* inner */
-.black-part-section1__inner,
-.white-part-section-3__inner,
-.header_position,
-.white-part-section-2__inner,
-.white-part-section-4__inner,
-.white-part-section-1__inner {
+.inner {
     margin: 0 140px;
     width: calc(100% - 280px);
 }
@@ -99,7 +94,7 @@ h2 {
 
 
 .white-part-section-2 {
-    background: linear-gradient(20deg, var(--color-background) 0%, var(--color-background) 60%, var(--color-background-07) 70%, rgba(255, 255, 255, 0) 90%);
+    background: linear-gradient(20deg, var(--color-background) 0%, var(--color-background) 60%, var(--color-background07) 70%, rgba(255, 255, 255, 0) 90%);
 }
 
 .white-part-section-2__indentation {
@@ -165,6 +160,11 @@ h2 {
 
 .white-part-section-3__card-wrapper {
     justify-self: center;
+    width: 350px;
+    height: 300px;
+    border-radius: 0 20px;
+    background: url(../images/897f6845724e4711b48b8d91a599db1d.jpg);
+    background-position: center;
 }
 
 .white-part-section-3__card-wrapper_1 {
@@ -187,7 +187,7 @@ h2 {
 /* white-part-section-4 */
 
 .white-part-section-4 {
-    transition: background 1s;
+    transition: all 1s;
     background: linear-gradient(197deg, var(--color-background) 0%, var(--color-background) 40%, var(--color-background07) 70%, rgba(0, 0, 0, .1) 90%);
 }
 
@@ -214,26 +214,24 @@ h2 {
 /* black-part */
 
 
-/* black-part-section-1 */
+
+
+/* black-part-section-1  styles */
 
 .black-part-section1 {
+    transition: all 1s;
     background: var(--color-background);
+    overflow: hidden;
 }
 
 .black-part-section1__inner {
-    padding: 192px 0;
-    display: flex;
-    justify-content: right;
+    padding: 192px 0 0;
 }
 
 
 
 .black-part-section-1__square-wrapper {
     max-width: 750px;
-    position: relative;
-    margin-top: -80px;
-    left: 40px;
-    z-index: 104;
 }
 
 .black-part-section-1__h2-wrapper {
@@ -244,13 +242,20 @@ h2 {
     margin-bottom: 30px;
 }
 
-.black-part-section1__stroika-wrapper {
+.black-part-section1__building-wrapper {
     height: 455px;
     overflow: hidden;
 }
 
-.black-part-section1__stroika {
+.black-part-section1__building {
     width: 911.5px;
+
+}
+
+.black-part-section1__shaft-wrapper {}
+
+.black-part-section1__shaft {
+    border-radius: 10px;
 }
 
 .black-part-section1__pipes-wrapper {
@@ -259,37 +264,70 @@ h2 {
     overflow: hidden;
     transform: rotate(-45deg);
     border-radius: 10px;
-    position: absolute;
-    right: 450px;
-    margin-top: 420px;
-    z-index: 105;
 }
 
 .black-part-section1__pipes {
     transform: translateX(-70px);
 }
 
-.black-part-section1__shaft-wrapper {
-    position: absolute;
-    z-index: 103;
-    margin-top: -40px;
-    margin-right: -80px;
-}
-
-.black-part-section1__shaft {
-    border-radius: 10px;
-
-}
 
 .black-part-section-1__dark-square-wrapper {
     max-width: 250px;
-    position: absolute;
-    margin-top: 230px;
-    margin-right: -80px;
 }
 
 .black-part-section-1__dark-square__p {
     margin-bottom: 20px;
+}
+
+/* black-part-section-1  position */
+.black-part-section-1__square-position,
+.black-part-section1__shaft-position,
+.black-part-section1__pipes-position,
+.black-part-section-1__dark-square-position {
+    transition: all 1s;
+
+}
+
+.black-part-section-1__square-position {
+    transform: translate(50px, 300px);
+}
+
+.black-part-section1__building-position {
+    position: absolute;
+    right: 140px;
+    z-index: 0;
+}
+
+.black-part-section1__shaft-position {
+    transform: translate(775px, -306px);
+}
+
+.black-part-section1__pipes-position {
+    position: absolute;
+    right: 500px;
+    margin-top: 200px;
+}
+
+.black-part-section-1__dark-square-position {
+    transform: translate(2000px, -186px);
+}
+
+/* position-final */
+
+.black-part-section-1__square-position-final {
+    transform: translate(50px, -90px);
+}
+
+.black-part-section1__shaft-position-final {
+    transform: translate(1400px, -306px);
+}
+
+.black-part-section1__pipes-position-final {
+    margin-top: -20px;
+}
+
+.black-part-section-1__dark-square-position-final {
+    transform: translate(1450px, -186px);
 }
 
 /* media */
@@ -458,4 +496,14 @@ h2 {
 
 .font_big {
     font-size: var(--font-size-text-big)
+}
+
+/* color-change */
+
+.white-part-section-4-color-change {
+    background: linear-gradient(197deg, var(--color-background-black) 0%, var(--color-background-black) 40%, var(--color-background07-black) 70%, rgba(0, 0, 0, .1) 90%);
+}
+
+.black-part-section1-color-change {
+    background: var(--color-background-black);
 }
