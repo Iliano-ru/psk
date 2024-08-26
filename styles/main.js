@@ -5,11 +5,12 @@
     const square = document.querySelector('.black-part-section-1__square-position ')
     const whitePartSection4 = document.querySelector('.white-part-section-4')
     const blackPartSection1 = document.querySelector('.black-part-section1')
-
+    const blackPartSection2 = document.querySelector('.black-part-section2')
 
     function colorBlackToWhite() {
         whitePartSection4.classList.remove('white-part-section-4-color-change');
         blackPartSection1.classList.remove('black-part-section1-color-change')
+        blackPartSection2.classList.remove('black-part-section1-color-change')
         // document.documentElement.style.setProperty('--color-background', 'rgba(255, 255, 255, 1)');
         // document.documentElement.style.setProperty('--color-background07', 'rgba(255, 255, 255, .7)');
     }
@@ -17,6 +18,7 @@
     function colorWhiteToBlack() {
         whitePartSection4.classList.add('white-part-section-4-color-change');
         blackPartSection1.classList.add('black-part-section1-color-change')
+        blackPartSection2.classList.add('black-part-section1-color-change')
         // document.documentElement.style.setProperty('--color-background', '#1f2122');
         // document.documentElement.style.setProperty('--color-background07', '#1f2122c0');
     }

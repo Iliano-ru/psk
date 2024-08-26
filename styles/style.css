@@ -47,7 +47,10 @@ h2 {
     width: calc(100% - 280px);
 }
 
-
+.cards-section {
+    margin: 0 70px;
+    width: calc(100% - 140px);
+}
 
 /* header */
 
@@ -116,9 +119,6 @@ h2 {
     margin-top: -140px;
 }
 
-.button__span_white {
-    background-color: white;
-}
 
 /* white-part-section-3 */
 
@@ -219,7 +219,7 @@ h2 {
 /* black-part-section-1  styles */
 
 .black-part-section1 {
-    transition: all 1s;
+    transition: all 0.7s;
     background: var(--color-background);
     overflow: hidden;
 }
@@ -330,22 +330,86 @@ h2 {
     transform: translate(1450px, -186px);
 }
 
+
+
+/* black-part-section2 */
+
+.black-part-section2 {
+    transition: all 0.7s;
+    background-color: var(--color-background);
+}
+
+
+
+
+.black-part-section-2__inner {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        'small-header small-header small-header small-header'
+        'h2 h2 h2 h2'
+        'text text text button'
+        'card1 card2 card3 card4';
+}
+
+.black-part-section-2__small-header-wrapper {
+    grid-area: small-header;
+}
+
+.black-part-section-2__header-wrapper {
+    grid-area: h2;
+}
+
+.black-part-section-2__text-wrapper {
+    max-width: 650px;
+    grid-area: text;
+}
+
+.black-part-section-2__button-wrapper {
+    grid-area: button;
+    justify-self: right;
+    align-self: center;
+    margin: 15px 30px 30px;
+}
+
+.black-part-section-2__card-wrapper {
+    justify-self: center;
+    width: 350px;
+    height: 300px;
+    border-radius: 0 20px;
+    background: url(../images/card_back.webp);
+    background-position: center;
+}
+
+.black-part-section-2__card-wrapper_1 {
+    grid-area: card1;
+}
+
+.black-part-section-2__card-wrapper_2 {
+    grid-area: card2;
+}
+
+.black-part-section-2__card-wrapper_3 {
+    grid-area: card3;
+}
+
+.black-part-section-2__card-wrapper_4 {
+    grid-area: card4;
+}
+
 /* media */
 
 @media (max-width:1710px) {
-    .card {
+
+    .white-part-section-3__card-wrapper,
+    .black-part-section-2__card-wrapper {
         width: 250px;
     }
 }
 
 @media (max-width:1440px) {
 
-    .black-part-section1__inner,
-    .white-part-section-4__inner,
-    .white-part-section-3__inner,
-    .header_position,
-    .white-part-section-2__inner,
-    .white-part-section-1__inner {
+    .inner {
         margin: 0 70px;
         width: calc(100% - 140px);
     }
@@ -356,16 +420,13 @@ h2 {
         --font-size-text: 18px;
     }
 
-    .black-part-section1__inner,
-    .white-part-section-4__inner,
-    .white-part-section-3__inner,
-    .header_position,
-    .white-part-section-2__inner,
-    .white-part-section-1__inner {
+    .cards-section,
+    .inner {
         margin: 0 30px;
         width: calc(100% - 60px);
     }
 
+    .black-part-section-2__inner,
     .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
@@ -374,7 +435,8 @@ h2 {
             'card1 card2 card3 card4';
     }
 
-    .card {
+    .white-part-section-3__card-wrapper,
+    .black-part-section-2__card-wrapper {
         width: 200px;
     }
 }
@@ -406,6 +468,7 @@ h2 {
         margin-top: 0;
     }
 
+    .black-part-section-2__inner,
     .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
@@ -415,7 +478,8 @@ h2 {
             'card3 card3 card4 card4';
     }
 
-    .card {
+    .white-part-section-3__card-wrapper,
+    .black-part-section-2__card-wrapper {
         width: 350px;
     }
 
@@ -428,6 +492,7 @@ h2 {
         width: 100%;
     }
 
+    .black-part-section-2__inner,
     .white-part-section-3__inner {
         grid-template-areas:
             'small-header small-header small-header small-header'
@@ -441,14 +506,18 @@ h2 {
             'card4 card4 card4 card4';
     }
 
-    .card {
+    .white-part-section-3__card-wrapper,
+    .black-part-section-2__card-wrapper {
         width: 300px;
     }
 
+    .black-part-section-2__button-wrapper,
     .white-part-section-3__button-wrapper {
         justify-self: left;
         margin: 30px 0;
     }
+
+
 }
 
 /* modifiers */
@@ -496,6 +565,14 @@ h2 {
 
 .font_big {
     font-size: var(--font-size-text-big)
+}
+
+.button__span_white {
+    background-color: white;
+}
+
+.button__span_black {
+    background-color: var(--color-background-black);
 }
 
 /* color-change */
