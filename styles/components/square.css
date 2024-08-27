@@ -1,7 +1,7 @@
 ﻿.square {
-    background: -webkit-linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(86, 181, 184, 0.7));
-    background: -moz-linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(86, 181, 184, 0.7));
-    background: linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(86, 181, 184, 0.7));
+    background: -webkit-linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(151, 151, 218, .7));
+    background: -moz-linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(151, 151, 218, .7));
+    background: linear-gradient(135deg, rgba(51, 74, 246, 0.7), rgba(151, 151, 218, .7));
     padding: 30px;
     border-radius: 0 20px;
 }
