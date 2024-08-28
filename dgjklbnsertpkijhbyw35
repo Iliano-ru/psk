@@ -1,0 +1,35 @@
+[33mcommit 57ceb6ea970075c8c17d7057afa9fc004121a673[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mempowering-people[m[33m)[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Tue Aug 27 08:32:26 2024 +0400
+
+    2.0-new-cards-position
+
+[33mcommit c2e2cd93d65052fbb9c16a6f44da633c45ee8a6d[m[33m ([m[1;31mpsk/empowering-people[m[33m)[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Mon Aug 26 13:04:30 2024 +0400
+
+    1.0
+
+[33mcommit ad1f3e79d34fe8137415bb08ef8db12e477dbb4d[m[33m ([m[1;31mpsk/main[m[33m, [m[1;32mmain[m[33m, [m[1;32mcolor-change[m[33m)[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Sat Aug 24 12:07:04 2024 +0400
+
+    image-animation
+
+[33mcommit f26b3fd6d8ff0f1f819e892f173410de1abca6d5[m[33m ([m[1;31mpsk/color-change[m[33m)[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Tue Aug 20 15:46:18 2024 +0400
+
+    scrollCheck-function
+
+[33mcommit 1cca8aa28b99ac9f9eed780e056f2867e1e2d6bb[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Mon Aug 19 17:01:49 2024 +0400
+
+    color-change-without-animation
+
+[33mcommit 1cf75e78853e91131a0240241bbb037bdc3fb2e7[m
+Author: iliano <n_i_d@bk.ru>
+Date:   Sat Aug 17 14:45:58 2024 +0400
+
+    cutaway

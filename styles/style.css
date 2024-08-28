@@ -1,7 +1,7 @@
 ﻿@import url(./components/header/header.css);
 @import url(./components/square.css);
 @import url(./components/button.css);
-@import url(./components/card/card.css);
+@import url(./components/card.css);
 @import url(./components/square_dark.css);
 
 :root {
@@ -184,6 +184,22 @@ h2 {
     grid-area: card4;
 }
 
+
+.white-card1 {
+    background: linear-gradient(135deg, rgba(51, 74, 246, 1), rgba(76, 93, 239, 1));
+}
+
+.white-card2 {
+    background: linear-gradient(135deg, rgba(76, 93, 239, 1), rgba(101, 112, 232, 1));
+}
+
+.white-card3 {
+    background: linear-gradient(135deg, rgba(101, 112, 232, 1), rgba(126, 132, 225, 1));
+}
+
+.white-card4 {
+    background: linear-gradient(135deg, rgba(126, 132, 225, 1), rgba(151, 151, 218, 1));
+}
 
 /* white-part-section-4 */
 
@@ -414,6 +430,14 @@ h2 {
 
 .card4 {
     background: linear-gradient(135deg, rgba(87, 90, 147, 1), rgba(107, 107, 157, 1));
+}
+
+.black-part-section-2__card-h3 {
+    margin: 40px 0 10px;
+}
+
+.black-part-section-2__card-first-subtext {
+    margin: 20px 0 12px;
 }
 
 /* media */
