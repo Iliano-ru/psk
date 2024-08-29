@@ -1,8 +1,8 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
     const shaft = document.querySelector('.black-part-section1__shaft-position');
     const pipes = document.querySelector('.black-part-section1__pipes-position');
-    const darkSquare = document.querySelector('.black-part-section-1__dark-square-position');
-    const square = document.querySelector('.black-part-section-1__square-position ')
+    const darkSquare = document.querySelector('.black-part-section1__dark-square-position');
+    const square = document.querySelector('.black-part-section1__square-position ')
     const whitePartSection4 = document.querySelector('.white-part-section-4')
     const blackPartSection1 = document.querySelector('.black-part-section1')
     const blackPartSection2 = document.querySelector('.black-part-section2')
@@ -24,17 +24,17 @@
     }
 
     function animationPlay() {
-        square.classList.add('black-part-section-1__square-position-final')
+        square.classList.add('black-part-section1__square-position-final')
         shaft.classList.add('black-part-section1__shaft-position-final')
         pipes.classList.add('black-part-section1__pipes-position-final')
-        darkSquare.classList.add('black-part-section-1__dark-square-position-final')
+        darkSquare.classList.add('black-part-section1__dark-square-position-final')
     }
 
     function animationBack() {
-        square.classList.remove('black-part-section-1__square-position-final')
+        square.classList.remove('black-part-section1__square-position-final')
         shaft.classList.remove('black-part-section1__shaft-position-final')
         pipes.classList.remove('black-part-section1__pipes-position-final')
-        darkSquare.classList.remove('black-part-section-1__dark-square-position-final')
+        darkSquare.classList.remove('black-part-section1__dark-square-position-final')
 
     }
 
