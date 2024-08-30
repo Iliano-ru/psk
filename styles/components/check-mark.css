@@ -1,0 +1,28 @@
+﻿.check-mark {
+    width: 20px;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.check-mark__down,
+.check-mark__up {
+    display: inline-block;
+    background-color: var(--color-text-yellow);
+    width: 20px;
+    height: 2px;
+}
+
+
+.check-mark__up {
+    transform: rotate(45deg);
+}
+
+.check-mark__down {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+}
+
+.check-mark_active {
+    transform: rotate(90deg);
+}

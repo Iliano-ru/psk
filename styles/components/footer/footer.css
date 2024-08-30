@@ -1,0 +1,116 @@
+﻿/* footer */
+
+.footer {
+    background-image: linear-gradient(80deg, rgba(25, 36, 116, 1), rgba(107, 107, 157, 1));
+    padding: 100px 0;
+}
+
+.footer__inner {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "logo ul1 ul2 ul3";
+}
+
+.footer__ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer__li {
+    margin: 10px 0;
+}
+
+.footer__logo-wrapper {
+    grid-area: logo;
+}
+
+.footer__ul1-wrapper {
+    grid-area: ul1;
+}
+
+.footer__ul2-wrapper {
+    grid-area: ul2;
+}
+
+.footer__ul3-wrapper {
+    grid-area: ul3;
+}
+
+
+
+.spoiler {
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 30px);
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.footer__spoiler-wrapper {
+    display: none;
+}
+
+.spoiler__p {
+    margin: 0 20px;
+}
+
+
+
+@media (max-width: 960px) {
+    .footer__inner {
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "logo logo ul2 ul2 "
+            " ul1 ul1 ul3 ul3";
+        gap: 40px 0;
+    }
+}
+
+
+@media (max-width:520px) {
+    .footer {
+        padding: 5px 0;
+    }
+
+    .footer__inner {
+        justify-items: left;
+        grid-template-areas:
+            "logo logo logo logo"
+            " ul1 ul1 ul1 ul1 "
+            " ul2 ul2 ul2 ul2 "
+            " ul3 ul3 ul3 ul3 "
+        ;
+        gap: 20px;
+        margin: 0 15px;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .footer__logo-wrapper {
+        margin: 40px 0;
+    }
+
+    .footer__logo-wrapper,
+    .footer__ul {
+        transition: all 0.5s;
+    }
+
+    .footer__spoiler-wrapper {
+        display: block;
+    }
+
+}
+
+/* .hidden {
+    transition: all 0.5s;
+    max-height: 0;
+} */
+
+.showed {
+    transition: all 0.5s;
+    max-height: 800px;
+}

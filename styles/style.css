@@ -4,6 +4,8 @@
 @import url(./components/card.css);
 @import url(./components/square_dark.css);
 @import url(./components/link.css);
+@import url(./components/footer/footer.css);
+@import url(./components/check-mark.css);
 
 :root {
     --font-size-text: 20px;
@@ -505,46 +507,6 @@ h2 {
 }
 
 
-/* footer */
-
-.footer {
-    background-image: linear-gradient(80deg, rgba(25, 36, 116, 1), rgba(107, 107, 157, 1));
-    padding: 100px 0;
-}
-
-.footer__inner {
-    margin: 0 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "logo ul1 ul2 ul3";
-}
-
-.footer_ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-.footer__li {
-    margin: 10px 0;
-}
-
-.footer__logo-wrapper {
-    grid-area: logo;
-}
-
-.footer__ul1-wrapper {
-    grid-area: ul1;
-}
-
-.footer__ul2-wrapper {
-    grid-area: ul2;
-}
-
-.footer__ul3-wrapper {
-    grid-area: ul3;
-}
 
 /* media */
 
@@ -686,14 +648,7 @@ h2 {
         background: linear-gradient(40deg, var(--color-background-black) 0%, var(--color-background-black) 32%, var(--color-background07-black) 70%, rgba(89, 89, 139, .7) 100%);
     }
 
-    .footer__inner {
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-            "logo logo ul2 ul2 "
-            " ul1 ul1 ul3 ul3";
-        gap: 40px 0;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -746,17 +701,6 @@ h2 {
 }
 
 
-@media (max-width:520px) {
-    .footer__inner {
-        justify-items: left;
-        grid-template-areas:
-            "logo logo logo logo"
-            " ul2 ul2 ul2 ul2 "
-            " ul1 ul1 ul1 ul1 "
-            " ul3 ul3 ul3 ul3 ";
-        gap: 40px 0;
-    }
-}
 
 /* modifiers */
 

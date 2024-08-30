@@ -25,6 +25,10 @@
     .menu__link {
         font-size: var(--font-size-cutaway-title);
     }
+
+    .burger {
+        display: block;
+    }
 }
 
 .menu__list {
@@ -77,11 +81,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 960px) {
-    .burger {
-        display: block;
-    }
-}
 
 .burger__span2 {
     display: block;
