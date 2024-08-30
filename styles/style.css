@@ -3,6 +3,7 @@
 @import url(./components/button.css);
 @import url(./components/card.css);
 @import url(./components/square_dark.css);
+@import url(./components/link.css);
 
 :root {
     --font-size-text: 20px;
@@ -15,10 +16,12 @@
     --color-text-purple-dark: rgb(89, 89, 139);
     --color-text-grey: rgba(116, 116, 116, 0.808);
     --color-text-white: whitesmoke;
+    --color-text-yellow: rgb(215, 140, 28);
     --color-background: rgba(255, 255, 255, 1);
     --color-background07: rgba(255, 255, 255, 0.7);
     --color-background-black: #1f2122;
     --color-background07-black: #1f2122c0;
+
 }
 
 
@@ -270,8 +273,6 @@ h2 {
 
 }
 
-.black-part-section1__shaft-wrapper {}
-
 .black-part-section1__shaft {
     border-radius: 10px;
 }
@@ -476,6 +477,75 @@ h2 {
     letter-spacing: 0.2px;
 }
 
+
+/* black-part-section4 */
+
+.black-part-section4 {
+    padding: 225px 0;
+    background-size: cover;
+    background: linear-gradient(50deg, var(--color-background-black) 0%, var(--color-background-black) 20%, var(--color-background07-black) 50%, rgba(89, 89, 139, .7) 100%);
+}
+
+.black-part-section4__bg {
+    background: url(../images/panels.webp);
+    width: 100%;
+    height: 100%;
+}
+
+.black-part-section4__content-wrapper {
+    max-width: 600px;
+}
+
+.black-part-section4__small-header-wrapper {
+    margin-bottom: 8px;
+}
+
+.black-part-section4__text-wrapper {
+    margin: 16px 0 52px;
+}
+
+
+/* footer */
+
+.footer {
+    background-image: linear-gradient(80deg, rgba(25, 36, 116, 1), rgba(107, 107, 157, 1));
+    padding: 100px 0;
+}
+
+.footer__inner {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "logo ul1 ul2 ul3";
+}
+
+.footer_ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer__li {
+    margin: 10px 0;
+}
+
+.footer__logo-wrapper {
+    grid-area: logo;
+}
+
+.footer__ul1-wrapper {
+    grid-area: ul1;
+}
+
+.footer__ul2-wrapper {
+    grid-area: ul2;
+}
+
+.footer__ul3-wrapper {
+    grid-area: ul3;
+}
+
 /* media */
 
 
@@ -531,8 +601,7 @@ h2 {
     .black-part-section2__inner,
     .white-part-section-3__inner {
         width: 938px;
-        grid-template-areas:
-            'small-header small-header small-header small-header'
+        grid-template-areas: 'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
             'text text button button'
             'card1 card2 card3 card4';
@@ -574,13 +643,13 @@ h2 {
 
     .white-part-section-2__button-wrapper {
         margin-top: 0;
+        margin-left: 0;
     }
 
     .black-part-section2__inner,
     .white-part-section-3__inner {
         width: 730px;
-        grid-template-areas:
-            'small-header small-header small-header small-header'
+        grid-template-areas: 'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
             'text text text button'
             'card1 card1 card2 card2'
@@ -607,9 +676,34 @@ h2 {
         max-width: none;
         width: calc(100vw - 60px);
     }
+
+    .font_menu {
+        font-size: var(--font-size-text-big);
+    }
+
+    .black-part-section4 {
+        padding: 200px 0;
+        background: linear-gradient(40deg, var(--color-background-black) 0%, var(--color-background-black) 32%, var(--color-background07-black) 70%, rgba(89, 89, 139, .7) 100%);
+    }
+
+    .footer__inner {
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "logo logo ul2 ul2 "
+            " ul1 ul1 ul3 ul3";
+        gap: 40px 0;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .cards-section,
+    .inner {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
 
     .white-part-section-4__indentation {
         height: 150px;
@@ -617,8 +711,7 @@ h2 {
 
     .black-part-section2__inner,
     .white-part-section-3__inner {
-        grid-template-areas:
-            'small-header small-header small-header small-header'
+        grid-template-areas: 'small-header small-header small-header small-header'
             'h2 h2 h2 h2'
             'text text text text'
             'button button button button'
@@ -649,9 +742,25 @@ h2 {
         width: calc(100vw - 30px);
     }
 
+
+}
+
+
+@media (max-width:520px) {
+    .footer__inner {
+        justify-items: left;
+        grid-template-areas:
+            "logo logo logo logo"
+            " ul2 ul2 ul2 ul2 "
+            " ul1 ul1 ul1 ul1 "
+            " ul3 ul3 ul3 ul3 ";
+        gap: 40px 0;
+    }
 }
 
 /* modifiers */
+
+
 
 .small-header {
     font-size: var(--font-size-text);
@@ -708,6 +817,8 @@ h2 {
 .button__span_black {
     background-color: var(--color-background-black);
 }
+
+
 
 /* color-change */
 
