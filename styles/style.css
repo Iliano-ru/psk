@@ -6,6 +6,7 @@
 @import url(./components/link.css);
 @import url(./components/footer/footer.css);
 @import url(./components/check-mark.css);
+@import url(./components/back-to-top.css);
 
 :root {
     --font-size-text: 20px;
@@ -23,9 +24,13 @@
     --color-background07: rgba(255, 255, 255, 0.7);
     --color-background-black: #1f2122;
     --color-background07-black: #1f2122c0;
+    --color-background-light-black: #2f3233;
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;

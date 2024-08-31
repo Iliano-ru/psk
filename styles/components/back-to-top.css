@@ -1,0 +1,30 @@
+﻿.back-to-top {
+    overflow: hidden;
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: var(--color-background-light-black);
+    border-radius: 5px 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-to-top__check-mark-wrapper {
+    position: relative;
+    top: 1.2px;
+    left: 1px;
+}
+
+.back-to-top_hidden {
+    transition: all 0.5s;
+    max-width: 0;
+}
+
+
+
+.back-to-top_showed {
+    transition: all 0.5s;
+    max-width: 50px;
+}

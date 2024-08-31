@@ -94,21 +94,16 @@
         margin: 40px 0;
     }
 
-    .footer__logo-wrapper,
-    .footer__ul {
-        transition: all 0.5s;
-    }
-
     .footer__spoiler-wrapper {
         display: block;
     }
 
+    .hidden {
+        transition: all 0.5s;
+        max-height: 0;
+    }
 }
 
-/* .hidden {
-    transition: all 0.5s;
-    max-height: 0;
-} */
 
 .showed {
     transition: all 0.5s;
