@@ -32,6 +32,8 @@
     transform: rotate(45deg);
 }
 
+/* active */
+
 .check-mark_active {
     transform: rotate(180deg);
 }

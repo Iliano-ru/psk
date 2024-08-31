@@ -1,54 +1,11 @@
 ﻿/* menu */
 
-
-@media (max-width: 960px) {
-    .menu {
-        transition: all 0.6s;
-        display: block;
-        position: absolute;
-        top: -1000px;
-        left: -30px;
-        background-image: linear-gradient(135deg, rgb(51, 74, 246), var(--color-text-purple));
-        width: 100vw;
-        height: 100vh;
-        overflow: scroll;
-    }
-
-    .menu>ul {
-        display: block;
-    }
-
-    .menu__li {
-        margin: 60px;
-    }
-
-    .menu__link {
-        font-size: var(--font-size-cutaway-title);
-    }
-
-    .burger {
-        display: block;
-    }
-}
-
 .menu__list {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 55px;
     padding: 0;
-}
-
-@media (max-width:1280px) {
-    .menu__list {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 767px) {
-    .menu {
-        left: -15px;
-    }
 }
 
 .menu__link {
@@ -58,17 +15,6 @@
 .menu__link:hover {
     text-decoration: underline;
 }
-
-
-/* menu_active */
-
-.menu_active {
-    top: 0;
-    padding-top: 70px;
-}
-
-
-
 
 /* burger */
 .burger {
@@ -80,7 +26,6 @@
     height: 40px;
     cursor: pointer;
 }
-
 
 .burger__span2 {
     display: block;
@@ -113,9 +58,56 @@
     top: 28px;
 }
 
+@media (max-width:1280px) {
+    .menu__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .menu {
+        transition: all 0.6s;
+        display: block;
+        position: absolute;
+        top: -1000px;
+        left: -30px;
+        background-image: linear-gradient(135deg, rgb(51, 74, 246), var(--color-text-purple));
+        width: 100vw;
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .menu>ul {
+        display: block;
+    }
+
+    .menu__li {
+        margin: 60px;
+    }
+
+    .menu__link {
+        font-size: var(--font-size-cutaway-title);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* Блокировка body при открытом меню */
+
+    .footer_lock,
+    .body_lock {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        left: -15px;
+    }
+}
+
 /* burger active */
-
-
 
 .burger__span1_active {
     transform: rotate(-45deg);
@@ -129,4 +121,11 @@
 .burger__span3_active {
     transform: rotate(45deg);
     top: 10px;
+}
+
+/* menu_active */
+
+.menu_active {
+    top: 0;
+    padding-top: 70px;
 }

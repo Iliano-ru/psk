@@ -1,72 +1,42 @@
-﻿@media (hover:hover) {
+﻿.card__img {
+    width: 50px;
+    margin-bottom: auto;
+}
+
+.card {
+    border-radius: 0 20px;
+    height: 100%;
+    border-radius: 0 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+@media (hover:hover) {
     .card {
-        border-radius: 0 20px;
-        height: 100%;
-        border-radius: 0 20px;
-        background: linear-gradient(135deg, rgb(51, 74, 246), rgb(151, 151, 218));
         transition: all 0.3s;
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
     }
 
     .card:hover {
         opacity: 0.9;
     }
 
-    .card:hover {
-        opacity: 0.9;
+    .card__text {
+        transition: all 0.3s;
+        overflow: hidden;
+        max-height: 0;
     }
 
     .card:hover>.card__text {
         max-height: 100px;
     }
-
-    .card__text {
-        transition: all 0.3s;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-
-
 }
 
-.card__img {
-    width: 50px;
-    margin-bottom: auto;
-}
+
 
 
 @media (hover:none) {
     .card {
-        background: url(./897f6845724e4711b48b8d91a599db1d.jpg);
-        background-size: cover;
-        background-position: center;
-        aspect-ratio: 0.85;
-        width: 350px;
-        border-radius: 0 20px;
-    }
-
-    .card__blackout {
-        background: linear-gradient(135deg, rgb(51, 74, 246), rgb(86, 181, 184));
-        border-radius: 0 20px;
-        width: 100%;
-        aspect-ratio: 0.85;
-        opacity: 0.9;
-    }
-
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 30px;
-        height: 100%;
-    }
-
-
-    .card__text {
-        transition: all 0.3s;
+        opacity: .9;
     }
 }

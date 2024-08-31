@@ -40,13 +40,11 @@
     }
 
     function backToTopHide() {
-        // backToTop.style.display = 'none'
         backToTop.classList.remove('back-to-top_showed')
 
     }
 
     function backToTopShow() {
-        // backToTop.style.display = 'block'
         backToTop.classList.add('back-to-top_showed')
     }
 
@@ -63,6 +61,7 @@
     }
 
     // Вызываем функцию при прокрутке страницы
+
     window.addEventListener('scroll', () => {
         scrollCheck('color-change', colorWhiteToBlack, colorBlackToWhite);
         scrollCheck('image-animation-start', animationPlay, animationBack)
