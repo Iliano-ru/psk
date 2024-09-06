@@ -1,12 +1,12 @@
-﻿@import url(./components/header/header.css);
-@import url(./components/square.css);
-@import url(./components/button.css);
-@import url(./components/card.css);
-@import url(./components/square_dark.css);
-@import url(./components/link.css);
-@import url(./components/footer/footer.css);
-@import url(./components/check-mark.css);
-@import url(./components/back-to-top.css);
+﻿@import url(components/header/header.css);
+@import url(components/square.css);
+@import url(components/button.css);
+@import url(components/card.css);
+@import url(components/square_dark.css);
+@import url(components/link.css);
+@import url(components/footer/footer.css);
+@import url(components/check-mark.css);
+@import url(components/back-to-top.css);
 
 :root {
     --font-size-text: 20px;

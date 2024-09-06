@@ -1,10 +1,12 @@
-﻿<!DOCTYPE html>
+﻿{% load static %}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link type="text/css" href="{% static 'landing/styles/style.css' %}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -115,7 +117,7 @@
                         </div>
                         <div class="white-part-section-3__card-wrapper white-part-section-3__card-wrapper_1">
                             <article class="card white-card1">
-                                <img class="card__img" src="./images/Documents.png" alt="">
+                                <img class="card__img" src="../../static/landing/images/Documents.png" alt="">
                                 <p class="text_white card__text font_card">Feasibility studies, Pre-feed and Feed
                                     and Detailed
                                     engineering</p>
@@ -123,7 +125,7 @@
                         </div>
                         <div class="white-part-section-3__card-wrapper white-part-section-3__card-wrapper_2">
                             <article class="card white-card2">
-                                <img class="card__img" src="./images/Documents.png" alt="">
+                                <img class="card__img" src="../../static/landing/images/Documents.png" alt="">
                                 <p class="text_white card__text font_card">Feasibility studies, Pre-feed and Feed
                                     and Detailed
                                     engineering</p>
@@ -131,7 +133,7 @@
                         </div>
                         <div class="white-part-section-3__card-wrapper white-part-section-3__card-wrapper_3">
                             <article class="card white-card3">
-                                <img class="card__img" src="./images/Documents.png" alt="">
+                                <img class="card__img" src="../../static/landing/images/Documents.png" alt="">
                                 <p class="text_white card__text font_card">Feasibility studies, Pre-feed and Feed
                                     and Detailed
                                     engineering</p>
@@ -140,7 +142,7 @@
                         </div>
                         <div class="white-part-section-3__card-wrapper white-part-section-3__card-wrapper_4">
                             <article class="card white-card4">
-                                <img class="card__img" src="./images/Documents.png" alt="">
+                                <img class="card__img" src="../../static/landing/images/Documents.png" alt="">
                                 <p class="text_white card__text font_card">Feasibility studies, Pre-feed and Feed
                                     and Detailed
                                     engineering</p>
@@ -174,7 +176,7 @@
             <section class="black-part-section1">
                 <div class="black-part-section1__inner inner">
                     <div class="black-part-section1__building-wrapper black-part-section1__building-position">
-                        <img class="black-part-section1__building" src="./images/building.webp" alt="">
+                        <img class="black-part-section1__building" src="../../static/landing/images/building.webp" alt="">
                     </div>
                     <div class="black-part-section1__square-wrapper black-part-section1__square-position">
                         <article class="square">
@@ -191,10 +193,10 @@
                         </article>
                     </div>
                     <div class="black-part-section1__shaft-wrapper black-part-section1__shaft-position">
-                        <img class="black-part-section1__shaft" src="./images/shaft.webp" alt="">
+                        <img class="black-part-section1__shaft" src="../../static/landing/images/shaft.webp" alt="">
                     </div>
                     <div class="black-part-section1__pipes-wrapper black-part-section1__pipes-position">
-                        <img class="black-part-section1__pipes" src="./images/pipes.webp" alt="">
+                        <img class="black-part-section1__pipes" src="../../static/landing/images/pipes.webp" alt="">
                     </div>
                     <div class="black-part-section1__dark-square-wrapper black-part-section1__dark-square-position">
                         <article class="square square_dark black-part-section1__dark-square">
@@ -333,7 +335,7 @@
             <section class="black-part-section3">
                 <div class="black-part-section3_inner">
                     <div class="black-part-section3__img-wrapper">
-                        <img class="black-part-section3__img" src="./images/window.webp" alt="">
+                        <img class="black-part-section3__img" src="../../static/landing/images/window.webp" alt="">
                     </div>
                     <div class="black-part-section3__right-block">
                         <div class="black-part-section3__small-header-wrapper">
@@ -453,7 +455,7 @@
             </div>
         </div>
     </footer>
-    <a href="#top" id="back-to-top" class="back-to-top back-to-top_hidden" title="Back to top">
+    <a href="#" id="back-to-top" class="back-to-top back-to-top_hidden" title="Back to top">
         <div class="back-to-top__check-mark-wrapper">
             <div class="check-mark">
                 <span class="check-mark__line"></span>
@@ -462,8 +464,8 @@
     </a>
 </body>
 
-<script src="./styles/components/header/menu-burger/menu-burger.js"></script>
-<script src="./styles/main.js"></script>
-<script src="./styles/components/footer/footer.js"></script>
+<script src="../../static/landing/styles/components/header/menu-burger/menu-burger.js"></script>
+<script src="../../static/landing/styles/main.js"></script>
+<script src="../../static/landing/styles/components/footer/footer.js"></script>
 
 </html>
