@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{% static 'landing/styles/style.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+    <title>ПСК "СтройГород"</title>
+</head>
+
+<body>
+    <header class="header header_position inner">
+        <div class="header__inner ">
+            <div class="header__logo-wrapper">
+                <img src="" alt="логотип" class="header__logo logo">
+            </div>
+            <div class="burger">
+                <span class="burger__span1"></span>
+                <span class="burger__span2"></span>
+                <span class="burger__span3"></span>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__li"><a href="/"
+                            class="menu__link font_500 font_menu text_white {% if path == '/'%}text_purple{% endif %}">Home</a>
+                    </li>
+                    <li class="menu__li"><a href="/about_us" class="menu__link font_500 font_menu text_white {% if path == '/about_us/'%}text_purple{% endif %}">About us</a></li>
+                    <li class="menu__li"><a href="/expertise" class="menu__link font_500 font_menu text_white {% if path == '/expertise/'%}text_purple{% endif %}">Expertise</a></li>
+                    <li class="menu__li"><a href="/careers" class="menu__link font_500 font_menu text_white {% if path == '/careers/'%}text_purple{% endif %}">Careers</a></li>
+                    <li class="menu__li"><a href="/responsibility" class="menu__link font_500 font_menu text_white {% if path == '/responsibility/'%}text_purple{% endif %}">Responsibility</a>
+                    </li>
+                    <li class="menu__li"><a href="/lets_meet" class="menu__link font_500 font_menu text_white {% if path == '/lets_meet/'%}text_purple{% endif %}">Let's meet</a>
+                    </li>
+                    <li class="menu__li"><a href="/contact" class="menu__link font_500 font_menu text_white {% if path == '/contact/'%}text_purple{% endif %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div></div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="footer">
+            <div class="footer__spoiler-wrapper">
+                <div class="spoiler">
+                    <div class="check-mark">
+                        <span class="check-mark__line"></span>
+                    </div>
+                    <p class="text_white font_big spoiler__p">CC7 Europe B.V.</p>
+                </div>
+            </div>
+            <div class="footer__inner hidden">
+                <div class="footer__logo-wrapper">
+                    <img src="" alt="логотип" class="footer__logo logo">
+                </div>
+                <div class="footer__ul1-wrapper">
+                    <ul class="footer__ul">
+                        <li class="footer__li text_white "><strong>CC7 Europe B.V.</strong></li>
+                        <li class="footer__li text_white ">WTC The Hague</li>
+                        <li class="footer__li text_white ">Tower E - 14th Floor</li>
+                        <li class="footer__li text_white ">Prinses Beatrixlaan 582</li>
+                        <li class="footer__li text_white ">2595 BM The Hague</li>
+                        <li class="footer__li text_white ">The Netherlands</li>
+                    </ul>
+                </div>
+                <div class="footer__ul2-wrapper">
+                    <ul class="footer__ul">
+                        <li class="footer__li text_white "><strong>Contact</strong></li>
+                        <li class="footer__li text_white "><a href="#" class="link text_white">+31 (0)70 250
+                                4600</a>
+                        </li>
+                        <li class="footer__li text_white "><a href="#" class="link text_white">info@cc7europe.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__ul3-wrapper">
+                    <ul class="footer__ul">
+                        <li class="footer__li text_white "><a href="#"
+                                class="link text_white"><strong>Projects</strong></a></li>
+                        <li class="footer__li text_white "><a href="#" class="link text_white"><strong>Management
+                                    team</strong></a></li>
+                        <li class="footer__li text_white "><a href="#"
+                                class="link text_white"><strong>Careers</strong></a></li>
+                        <li class="footer__li text_white "><a href="#" class="link text_white"><strong>Let's
+                                    meet</strong></a></li>
+                        <li class="footer__li text_white "><a href="#"
+                                class="link text_white"><strong>cnce7.com</strong></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="back-to-top" class="back-to-top back-to-top_hidden" title="Back to top">
+        <div class="back-to-top__check-mark-wrapper">
+            <div class="check-mark">
+                <span class="check-mark__line"></span>
+            </div>
+        </div>
+    </a>
+</body>
+
+<script src="../../static/landing/styles/components/header/menu-burger/menu-burger.js"></script>
+<script src="../../static/landing/styles/main.js"></script>
+<script src="../../static/landing/styles/components/footer/footer.js"></script>
+
+</html>
